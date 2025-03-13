@@ -1,0 +1,65 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>活動行程以及報名表單</title>
+
+    </head>
+
+    <body>
+
+        <center><h1>活動行程</h1></center><br>
+        <font size="5">活動時間: 07 月 20 日</font><br>
+
+        <table border="1">
+            <tr><td>時間</td><td>活動</td></tr>
+            <tr><td>9:00~11:00</td><td>破冰遊戲</td></tr>
+            <tr><td>11:00~13:00</td><td>吃午餐</td></tr>
+            <tr><td>13:00~15:00</td><td>玩桌遊</td></tr>
+            <tr><td>15:00~17:00</td><td>抽獎</td></tr>
+        </table><br>
+
+        <hr width="100%">
+
+        <center><h1>填寫表單</h1></center><br>
+
+        <form action="list.php" method="POST">
+
+            您的姓名:<input type="text" name="uName"><BR>
+
+            您的學號:<input type="text" name="uCode"><BR>
+
+            您的電話:<input type="text" name="uPhone"><BR>
+
+            您的email:<input type="email" name="umail" ><br>
+
+            您的性別:<input type="radio" name="ugen" value="male">男<input type="radio" name="ugen" value="female">女<br>
+
+            居住的城市是:
+            <select name="city">
+                <option value="taipei">taipei</option>
+                <option value="Keelung">Keelung</option>
+                <option value="New Taipei">New Taipei</option>
+                <option value="Taoyuan">Taoyuan</option>
+                <option value="Hsinchu">Hsinchu</option>
+                <option value="Miaoli">Miaoli</option>
+                <option value="Taichung">Taichung</option>
+                <option value="Changhua">Changhua</option>
+                <option value="Nantou">Nantou</option>
+                <option value="Yunlin">Yunlin</option>
+                <option value="Chiayi">Chiayi</option>
+                <option value="Tainani">Tainan</option>
+                <option value="Pingtung">Pingtung</option>
+                <option value="kausiung">kausiung</option>
+            </select><br>
+
+            想問的問題:<BR>
+            <textarea cols="30" rows="10" name="ucom"></textarea><BR>
+            <input type="submit"><input type="reset">
+
+        </form>
+
+
+
+    </body>
+</html>
